@@ -115,7 +115,7 @@ module BigNat : BigNatType =
             else a - b - c + base, 1
           in
           zcons d (sub ar' br' c')
-            (*failwith "not implemented" (* INSERT CODE HERE *)*)
+            
             
     let (+) x y = add x y 0
     let (-) x y = sub x y 0
@@ -165,7 +165,7 @@ module BigNat : BigNatType =
       match y with
       | [] -> [1]
       | _ -> x * (x ** (y - [1]))
-            (* failwith "not yet implemented" (* INSERT CODE HERE *)*)
+
   end
    
 let fac n =
